@@ -1,0 +1,12 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@xset s off
+@xset -dpms
+@xset s noblank
+
+@sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium/Default/Preferences
+
+@unclutter -display :0 -noevents -grab
+
+@chromium-browser --noerrdialogs --kiosk {{kiosk_url}}?kiosk={{ansible_hostname}} --incognito

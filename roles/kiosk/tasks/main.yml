@@ -1,0 +1,31 @@
+---
+- name: Update Aptitude
+  become: true
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Upgrade System
+  become: true
+  apt: update_cache=yes cache_valid_time=3600 upgrade=dist
+
+- name: Check if packages need to be autoremoved
+  become: true
+  command: apt-get --dry-run autoremove
+  register: check_autoremove
+  changed_when: False
+
+- name: Autoremove unused packages
+  become: true
+  command: apt-get -y autoremove
+  when: "'packages will be REMOVED' in check_autoremove.stdout"
+
+- name: Add SSH keys
+  authorized_key: 'user=pi manage_dir=true key="{{ item }}"'
+  with_items:
+    - "https://github.com/j15e.keys"
+    - "https://github.com/paulcote.keys"
+
+- include: chromium.yml
+  tags: chromium
+
+- include: kiosk.yml
+  tags: kiosk
