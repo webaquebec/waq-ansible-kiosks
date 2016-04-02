@@ -24,8 +24,10 @@ Then you can skip pass since authorized keys are setup :
 
 # Credits
 
-Thanks to the authors of the following articles :
+Jean-Philippe Doyle & Web à Québec.
 
-https://www.danpurdy.co.uk/web-development/raspberry-pi-kiosk-screen-tutorial/
-http://www.stinebaugh.info/ansible-playbook-to-create-a-minimal-headless-raspberry-pi/
-https://sendgrid.com/blog/complete-guide-set-raspberry-pi-without-keyboard-mouse/
+Thanks to the authors of the following articles for the basis of my setup :
+
+- https://www.danpurdy.co.uk/web-development/raspberry-pi-kiosk-screen-tutorial/
+- http://www.stinebaugh.info/ansible-playbook-to-create-a-minimal-headless-raspberry-pi/
+- https://sendgrid.com/blog/complete-guide-set-raspberry-pi-without-keyboard-mouse/
