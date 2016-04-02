@@ -1,11 +1,13 @@
 ---
-- name: "Download chromium & dependencies"
+- name: "Download chromium-codecs"
   get_url:
     url: https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+build/9397032/+files/chromium-codecs-ffmpeg-extra_49.0.2623.108-0ubuntu0.14.04.1.1113_armhf.deb
     dest: /tmp/chromium-codecs-ffmpeg-extra_49.0.2623.108-0ubuntu0.14.04.1.1113_armhf.deb
+- name: "Download libgcrypt11_1"
   get_url:
     url: http://ftp.us.debian.org/debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.0-5%2bdeb7u3_armhf.deb
     dest: /tmp/libgcrypt11_1.5.0-5%2bdeb7u3_armhf.deb
+- name: "Download chromium"
   get_url:
     url: https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+build/9397032/+files/chromium-browser_49.0.2623.108-0ubuntu0.14.04.1.1113_armhf.deb
     dest: /tmp/chromium-browser_49.0.2623.108-0ubuntu0.14.04.1.1113_armhf.deb
