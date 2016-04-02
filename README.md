@@ -1,25 +1,19 @@
-# WAQ Ansible Kiosks 
+# WAQ Kiosks setup with Ansible 
 
-> Setup the cluster of raspberry pi for displays at Web à Québec with Ansible
+> Setup the cluster of raspberry pi for the displays at Web à Québec.
 
 ## Setup
 
-Setup your hosts address in `hosts` with the URL to display as `kiosk_url` and optionally `rotate` the screen.
+Set hostnames or IPs in `hosts` file.
 
-Rotate options (http://elinux.org/RPiconfig) È
+Specify the URL to display for each host with `kiosk_url=`.
 
-```
-display_rotate=0        Normal
-display_rotate=1         90 degrees
-display_rotate=2        180 degrees
-display_rotate=3        270 degrees
-display_rotate=0x10000  horizontal flip
-display_rotate=0x20000  vertical flip
-```
+Specify the display orientation with `rotate=`. 
+(See rotate options here)[http://elinux.org/RPiconfig].
 
-## Quick start
+## Running Ansible
 
-Run ansible with ask for password first time :
+Run Ansible with ask for password first time :
 
     ansible-playbook playbook.yml -i hosts --ask-pass
 
