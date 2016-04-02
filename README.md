@@ -2,9 +2,17 @@
 
 > Setup the cluster of raspberry pi for displays at Web à Québec with Ansible
 
-## Quick start
+## Setup
 
 Setup your hosts address in `hosts`.
+
+You can set the kiosks URL to display as `kiosk_url` in `playbook.yml`.
+
+Each host will open the URL with a query string with the hostname ex: 
+
+    http://google.com/?kiosk=qcumpi-4
+
+## Quick start
 
 Run ansible with ask for password first time :
 
