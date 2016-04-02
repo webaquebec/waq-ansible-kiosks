@@ -1,9 +1,9 @@
 [kiosks]
-qcnumpi-1.local
-qcnumpi-2.local
-qcnumpi-3.local
-qcnumpi-4.local
-qcnumpi-5.local
-qcnumpi-6.local
-qcnumpi-7.local
-qcnumpi-8.local
+qcnumpi-1.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/22"
+qcnumpi-2.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/547"
+qcnumpi-3.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/30"
+qcnumpi-4.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/24"
+qcnumpi-5.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/253"
+qcnumpi-6.local rotate=1 kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/room/28"
+qcnumpi-7.local kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/home"
+qcnumpi-8.local kiosk_url="http://paulcote.github.io/displays.waq.paulcote.net/www/#/wait/22"

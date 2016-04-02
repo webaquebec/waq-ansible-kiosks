@@ -4,13 +4,18 @@
 
 ## Setup
 
-Setup your hosts address in `hosts`.
+Setup your hosts address in `hosts` with the URL to display as `kiosk_url` and optionally `rotate` the screen.
 
-You can set the kiosks URL to display as `kiosk_url` in `playbook.yml`.
+Rotate options (http://elinux.org/RPiconfig) È
 
-Each host will open the URL with a query string with the hostname ex: 
-
-    http://google.com/?kiosk=qcumpi-4
+```
+display_rotate=0        Normal
+display_rotate=1         90 degrees
+display_rotate=2        180 degrees
+display_rotate=3        270 degrees
+display_rotate=0x10000  horizontal flip
+display_rotate=0x20000  vertical flip
+```
 
 ## Quick start
 

@@ -4,5 +4,3 @@
   roles:
     - kiosk
   remote_user: pi
-  vars:
-    kiosk_url: http://api.webaquebec.org/api/

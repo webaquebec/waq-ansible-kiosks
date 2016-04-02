@@ -1,0 +1,7 @@
+- name: "Disable overscan"
+  become: true
+  lineinfile: dest=/boot/config.txt regexp=^#?disable_overscan= line=disable_overscan=1
+
+- name: "Set rotation"
+  become: true
+  lineinfile: dest=/boot/config.txt regexp=^#?display_rotate= line=display_rotate={{rotate}}
